@@ -1,0 +1,134 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.top_section {
+    height: 70%;
+    margin: 0;
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5%;
+    padding-left: 1%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.top_image {
+    background-image: url("img/code.jpg");
+
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.top_text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 6px 5px white;
+    text-shadow: 14px 4px 5px rgba(220, 0, 37, 1);
+}
+
+h1 {
+    font-size: 300%;
+}
+
+.page_design {
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #333;
+    padding: 0%;
+    text-align: left;
+    color: white;
+    align-items: center;
+    font-size: 110%;
+    margin: 0%;
+}
+
+.horizon_img {
+    width: 100%;
+    height: auto;
+}
+
+.normal {
+    opacity:0
+}
+
+.animation_start {
+    width: 100%;
+    height: auto;
+    animation: animation_move 2s;
+}
+
+.horizontal_format {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hori_item {
+    padding: 7%;
+    font-family: "Monospace", Monaco;
+}
+
+
+h2 {
+    padding-left: 1%;
+}
+
+@keyframes animation_move {
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
