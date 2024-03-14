@@ -1,0 +1,62 @@
+.photo-frame{
+    justify-items: center;
+    align-items: center;
+    top: 100px;
+    position: absolute;
+    left: 40%;
+    height: 500px;
+    width: 300px;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.15);
+    animation: frameMove 5s infinite;
+}
+
+@keyframes frameMove
+{
+    0% {
+        transform:rotate(15deg) translateX(-30%);
+    }
+    50% {
+        transform: rotate(-15deg) scale(1.05) translateX(30%);
+    }
+    100% {
+        transform: rotate(15deg) translateX(-30%);
+    }
+}
+
+.photo-content:before{
+    content: '';
+    transform: skew(7deg);
+    position: absolute;
+    bottom: 100%;
+    left: 7px;
+    height: 180px;
+    width: 3px;
+    background-color: black;
+    animation: lineMove 5s infinite;
+}
+
+
+.photo-content:after{
+    content: '';
+    transform: skew(-7deg);
+    position: absolute;
+    bottom: 100%;
+    height: 180px;
+    right: 7px;
+    width: 3px;
+    background-color: black;
+    animation: lineMove 5s infinite;
+}
+
+.photo-content{
+    background-image: url("img/nature0.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 270px;
+    margin-left: 10px;
+    transition: all 300ms;
+    height: 380px;
+    margin-top: 20px;
+    cursor: pointer;
+}
